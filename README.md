@@ -15,24 +15,24 @@ Labels: Group ∈ {A (AD), F (FTD), C (CN)}, plus demographic/clinical fields (A
 # Environment & Dependencies
 Notebooks are written for Google Colab (they mount Google Drive for persistence between notebooks and use !pip install / !apt-get install cells). To run them elsewhere, install the following:
 
-# Data acquisition (Task 2/3 notebooks only)
+Data acquisition (Task 2/3 notebooks only)
 apt-get install -y git-annex
 pip install datalad
 
-# Core ML / data science
+Core ML / data science
 pip install numpy pandas scipy scikit-learn seaborn matplotlib plotly
 
-# EEG signal processing
+EEG signal processing
 pip install mne
 
-# Gradient boosting baseline
+Gradient boosting baseline
 pip install xgboost
 
-# Graph neural networks (match the torch version installed in your environment)
+Graph neural networks (match the torch version installed in your environment)
 pip install torch
 pip install torch-geometric torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-<YOUR_TORCH_VERSION>.html
 
-# Explainability (Task 3b)
+Explainability (Task 3b)
 pip install shap lime
 If not using Colab, replace the google.colab.drive.mount(...) cells with a local path for SAVE_DIR, and remove/skip the Colab-specific install cells (!apt-get, drive.mount).
 5. Data Setup
