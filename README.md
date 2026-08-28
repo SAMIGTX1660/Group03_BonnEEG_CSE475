@@ -1,8 +1,9 @@
-Group 03:
+#Group 03:
 1. Muhammed Jabed Iqbal Sami
 2. Kasheef Ahmed Nihal
 3. Sumaiya Rahman
 4. Tasmia Rahman
+# Track: 1 — Graph Neural Network (GNN) on table-style EEG data
 
 # Dataset:
 Name: ds004504 — "A dataset of EEG recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects"
