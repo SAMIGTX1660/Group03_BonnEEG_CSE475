@@ -70,3 +70,11 @@ The dataset is used two ways across the notebooks:
 Task 1 (EDA) reads pre-merged tabular CSVs (data/participants.txt, data/eeg_technical_metadata.csv, data/eeg_signal_features.csv) — demographics + whole-scalp relative band power, no raw signal processing needed.
 Tasks 2–3 download and process the raw EEG .set files directly from OpenNeuro to extract per-channel features and functional-connectivity graphs (see §5).
 
+# Results:
+| Model | Macro-F1 | Notes |
+| :--- | :--- | :--- |
+| SVM-RBF (best Task 2 baseline) | 0.595 | Single train/val/test split |
+| First GNN (2-layer GCN, correlation graph) | 0.458 | Single split; underperforms SVM baseline |
+| Best-ablation GNN (single split) | ~0.69–0.74* | Best of 9 one-factor-at-a-time ablation configs on the validation set |
+| SVM, 5-fold CV mean | 0.487 ± 0.086 | Leakage-safe, subject-grouped |
+| Best-ablation GNN, 5-fold CV mean | ~0.51–0.53* | Leakage-safe, subject-grouped; paired Wilcoxon vs. SVM **not statistically significant** (p > 0.05, n_folds=5) |
