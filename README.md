@@ -5,5 +5,5 @@ Group 03:
 4. Tasmia Rahman
 
 Dataset:
-Bonn EEG
-Link: https://www.kaggle.com/datasets/quands/eeg-dataset/data
+Open neuro ds004504
+Link: https://openneuro.org/datasets/ds004504/versions/1.0.9
