@@ -1,11 +1,3 @@
-# Dataset:
-Name: ds004504 — "A dataset of EEG recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects"
-Source: OpenNeuro, https://openneuro.org/datasets/ds004504/versions/1.0.9
-Citation: Miltiadous et al., 2023, Data, https://doi.org/10.3390/data8060095
-Subjects: 88 total — 36 AD / 23 FTD / 29 CN
-Signal: 19-channel EEG (standard 10-20 montage, referential A1/A2), 500 Hz sampling rate, resting-state eyes-closed, mean recording length ≈13.4 min (range 5.1–21.5 min)
-Labels: Group ∈ {A (AD), F (FTD), C (CN)}, plus demographic/clinical fields (Age, Gender, MMSE score)
-
 # Graph Neural Networks & Explainable AI for EEG-Based Dementia Classification
 
 [![Dataset](https://img.shields.io/badge/OpenNeuro-ds004504_v1.0.9-blue.svg)](https://openneuro.org/datasets/ds004504/versions/1.0.9)
